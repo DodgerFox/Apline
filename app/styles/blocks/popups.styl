@@ -1,0 +1,61 @@
+.popups
+  position fixed
+  left 0
+  top 0
+  right 0
+  bottom 0
+  background-color white
+  z-index 20
+  min-height 100vh
+  display none
+  padding 40px 0
+  overflow-y scroll
+
+  .wrap
+    min-height 100%
+    display flex
+    justify-content center
+    align-items center
+
+  &-close
+    position absolute
+    right 7px
+    top 7px
+    padding 10px
+    t()
+    cursor pointer
+    &:hover
+      opacity 0.5
+
+  &-logo
+    margin-top 45px
+
+  &-form
+    box-shadow 0 17px 60px rgba(112, 112, 112, 0.16)
+    padding 40px 50px
+    max-width 450px
+    width 100%
+    position relative
+    // display none
+    +to-width(520px)
+      padding 30px 20px
+
+    &_thanks
+      display none
+
+    &__title
+      color #eeb621
+      font-size 30px
+      font-weight 900
+      text-transform uppercase
+      padding-bottom 6px
+
+    &__text
+      font-size 21px
+      font-weight 600
+
+
+    .simple-button
+      cursor pointer
+      margin 0
+      margin-top 14px

@@ -1,0 +1,70 @@
+section.contacts
+  .wrap
+    .contacts-wrap
+      .contacts-items
+        .contacts-item
+          h3 Адрес главного офиса
+          p Россия, г. Ростов-на-Дону, ул. 9-я линия, 13
+          .onthemap
+            p Посмотреть на карте
+            .map#map
+        .contacts-item
+          h3 График работы
+          p Пн-сб: с 8:00 до 20:00
+        .contacts-item
+          h3 Связаться с нами
+          p Бесплатный номер: 
+            a(href="tel:+78005115180") 8 800 511-51-80
+          p Тел. 
+            a(href="tel:+78632210496") +7 (863) 22-10-496
+          p E-mail: 
+            a(href="mailto:79185145798@yandex.ru") 79185145798@yandex.ru
+      .contacts-image
+        img(src="assets/images/contacts-image.jpg")
+    
+    .contacts-item
+      h3 Реквизиты
+      .contacts-item__wrap
+        p ИП Дрябо В.В. <br>Юр. адрес: 344037, г. Ростов-на-Дону, ул. Ереванская 22, кв. 5 <br>р/с: 40802810603800000601 <br>в ОАО КБ «Центр-Инвест»
+        p к/с: 30101810100000000762 <br>БИК: 046015762 <br>ИНН: 616711518330О <br>ГРНИП: 313619508400056
+    
+    .contacts-share
+      p Поделись с друзьями или сохрани у себя в ленте
+      .contacts-share__social
+        a(href="#")
+          img(src="assets/images/contacts/icon_vk.svg")
+        a(href="#")
+          img(src="assets/images/contacts/icon_gl.svg")
+        a(href="#")
+          img(src="assets/images/contacts/icon_fb.svg")
+        a(href="#")
+          img(src="assets/images/contacts/icon_tw.svg")
+        a(href="#")
+          img(src="assets/images/contacts/icon_od.svg")
+        a(href="#")
+          img(src="assets/images/contacts/icon_in.svg")
+    
+    form.contacts-form
+      h2.contacts-form__title Свяжитесь с нами через форму обратной связи
+      .contacts-form__input
+        label Имя, фамилия*
+        input(type="text" required)
+      .contacts-form__input
+        label Номер телефона*
+        input(type="text" data-inputmask="'mask': '+7 (999) 999-99-99'" required placeholder="+7 (___) ___-__-__")
+      .contacts-form__input
+        label Электронная почта*
+        input(type="email" required)
+      .contacts-form__input
+        label Сообщение
+        textarea(tyle="text")
+      
+      .checkbox
+        input(type="checkbox" id="service-checkbox")
+        label(for="service-checkbox") Нажимая на нкнопку Отправить сообщение, я даю согласие на обработку персоальных данных
+      
+      input(type="submit" value="submit")
+      .simple-button
+        p отправить сообщение
+        .simple-button__arrow
+          img(src="assets/images/icon_arrow.svg")

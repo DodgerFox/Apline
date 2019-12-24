@@ -1,0 +1,136 @@
+.footer
+  background-color #f2f2f2
+
+  &-logo
+    margin-right 90px
+    +to-width(900px)
+      margin-right 40px
+    +to-width(800px)
+      margin-right 0
+      img
+        display block
+        margin 0 auto
+    &__text
+      text-align center
+      margin-top 17px
+      color #000000
+      font-size 9px
+      font-weight 400
+      letter-spacing 2.09px
+      line-height 14px
+      text-transform uppercase
+
+  &-item
+    max-width 470px
+    +to-width(900px)
+      margin-top 10px
+    +to-width(800px)
+      margin-top 40px
+    &__title
+      font-size 16px
+      color #000000
+      font-weight 900
+      letter-spacing 1px
+      text-transform uppercase
+      padding-bottom 12px
+
+  &-list
+    display flex
+    flex-wrap wrap
+    &__item
+      width 50%
+      font-size 16px
+      font-weight 400
+      line-height 18px
+      padding-right 5px
+      padding-bottom 15px
+      a
+        color black
+        t()
+        &:hover
+          color #eeb621
+
+  &-main
+    padding 45px 0
+    display flex
+    justify-content space-between
+    +to-width(800px)
+      flex-direction column
+
+  &-social
+    display flex
+    padding 25px 0
+    border-top 1px solid #e0e0e0
+    border-bottom 1px solid #e0e0e0
+    +to-width(520px)
+      flex-direction column
+
+    &__title
+      color #000000
+      font-size 16px
+      font-weight 700
+      margin-right 105px
+      +to-width(640px)
+        margin-right 30px
+      +to-width(520px)
+        padding-bottom 20px
+
+    &-list
+      display flex
+      align-items center
+
+    &__item
+      margin-right 25px
+      &:last-child
+        margin-right 0
+      svg
+        t()
+        &:hover
+          fill #eeb621
+
+  &-bottom
+    display flex
+    justify-content space-between
+    align-items center
+    padding-top 8px
+    +to-width(520px)
+      flex-direction column
+      align-items flex-start
+    &-list
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      align-items center
+      width 100%
+      padding-right 120px
+      +to-width(900px)
+        padding-right 50px
+      +to-width(640px)
+        padding-right 0
+
+    &__item
+      font-size 12px
+      font-weight 400
+      line-height 31px
+      color #000000
+      t()
+      +to-width(700px)
+        width 50%
+
+    a
+      &:hover
+        color #eeb621
+
+
+.made-by
+  display flex
+  align-items center
+  color #000000!important
+  +to-width(520px)
+    margin-left -13px
+  p
+    line-height 17px
+    font-size 12px
+    white-space nowrap
+    &:last-child
+      font-weight 700

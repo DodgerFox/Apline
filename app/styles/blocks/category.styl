@@ -1,0 +1,68 @@
+.category
+  &_works
+    padding-top 35px
+    +to-width(900px)
+      padding-top 0
+
+  &-article
+    margin-top 65px
+    display flex
+    +to-width(900px)
+      flex-direction column
+
+    &__image
+      background-position top center
+      background-size cover
+      width 470px
+      min-width 470px
+      height 407px
+      +to-width(900px)
+        min-width initial
+        width 100%
+        max-width 470px
+
+    &__wrap
+      padding-left 30px
+      +to-width(900px)
+        padding-left 0
+        margin-top 30px
+
+    &__content
+      max-height 358px
+      overflow hidden
+      transition 1s all
+      &.open
+        max-height 2000px
+      p
+        color #000000
+        font-size 18px
+        line-height 28px
+        padding-bottom 28px
+
+    &__title
+      font-size 33px
+      font-weight 900
+      padding-bottom 18px
+
+    &__button
+      display flex
+      align-items center
+      width fit-content
+      cursor pointer
+      margin-top 20px
+      t()
+      &.hidden
+        display none
+      &:hover
+        p
+          color #eeb621
+
+      img
+        max-width 11px
+
+      p
+        font-size 18px
+        font-weight 900
+        margin-right 10px
+        white-space nowrap
+        t()

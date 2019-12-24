@@ -1,0 +1,23 @@
+extends ../layouts/default
+
+block head
+
+block content
+	include ../blocks/header
+	include ../blocks/search
+	include ../blocks/submenu
+	include ../blocks/popups
+	main.main.general
+		include ../blocks/forehead
+		include ../blocks/breadcrumbs
+		include ../blocks/service
+		include ../blocks/service-photos
+		include ../blocks/service-why
+		include ../blocks/service-form
+		include ../blocks/deal
+		include ../blocks/service-another
+	include ../blocks/footer
+
+	+script('common.min')
+	+script('jquery-inputmask')
+	+script('main')

@@ -1,0 +1,95 @@
+.service
+  padding-bottom 0
+  .about
+    &-title
+      margin-top 22px
+      font-size 42px
+      font-weight 900
+      text-transform none
+      +to-width(520px)
+        font-size 32px
+      +to-width(360px)
+        text-align left
+
+    &-text
+      font-size 21px
+      font-weight 400
+      line-height 30px
+      margin 0 auto
+      margin-top 14px
+      max-width 938px
+      text-align center
+      +to-width(520px)
+        font-size 18px
+        line-height 28px
+      +to-width(360px)
+        text-align left
+
+    &-item
+
+      &__title
+        font-size 42px
+        padding-bottom 20px
+        +to-width(520px)
+          font-size 32px
+
+    &-content
+      p
+        font-size 19px
+        font-weight 600
+        line-height 26px
+
+      &:nth-child(3)
+        background-image none
+      &:nth-child(even)
+        background-image linear-gradient(180deg, #fbfbfb 0%, #ededed 100%)
+
+  &-photos
+    padding-top 20px
+    overflow hidden
+    .slider
+      padding-bottom 0
+
+  &-feed
+    &__text
+      font-size 17px
+      font-weight 900
+
+  &-wrap
+    display flex
+    +to-width(640px)
+      flex-direction column
+
+  &-form
+    margin-top 10px
+    input[type="text"]
+      background-color #f1f1f1
+      border none
+      height 69px
+      max-width 359px
+      width 100%
+      margin-right 10px
+      padding-left 30px
+      font-size 17px
+      font-weight 600
+      +to-width(640px)
+        margin-right 0
+        margin-bottom 10px
+
+
+  &-deal
+    padding-top 70px
+    background-color #f0f0f0
+    overflow hidden
+
+  &-another
+    overflow hidden
+    +to-width(520px)
+      padding-bottom 0
+    .works-item__image
+      width 370px
+      +to-width(900px)
+        width 300px
+        height 200px
+      +to-width(560px)
+        width 280px

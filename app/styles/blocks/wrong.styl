@@ -1,0 +1,58 @@
+.wrong
+  padding 40px 0
+  background-size cover
+  background-position top center
+  height 100vh
+  min-height 600px
+  +to-width(420px)
+    min-height 500px
+
+  .wrap
+    height 100%
+    display flex
+    flex-direction column
+    justify-content center
+
+  &-title
+    color #eeb621
+    font-size 116px
+    font-weight 900
+    line-height 70px
+    span
+      font-size 63px
+      color #ffffff
+      font-weight 900
+      line-height 53px
+      text-transform uppercase
+      +to-width(900px)
+        font-size 52px
+        line-height 43px
+      +to-width(420px)
+        font-size 42px
+        line-height 0.3
+
+    +to-width(900px)
+      font-size 90px
+
+    +to-width(420px)
+      text-align center
+      line-height 0.6
+
+  &-subtitle
+    color #ffffff
+    font-size 33px
+    font-weight 400
+    line-height 40px
+    margin-top 15px
+    +to-width(1200px)
+      font-size 28px
+      line-height 34px
+    +to-width(420px)
+      text-align center
+      font-size 20px
+
+  .simple-button
+    margin 0
+    margin-top 110px
+    +to-width(900px)
+      margin-top 60px

@@ -1,0 +1,95 @@
+.about
+  padding 40px 0
+
+  &-title
+    font-size 50px
+    font-weight 900
+    text-transform uppercase
+    text-align center
+    +to-width(900px)
+      font-size 42px
+    +to-width(520px)
+      font-size 32px
+
+  &-content
+    padding-right 30px
+    +to-width(900px)
+      padding-right 0
+    p
+      font-size 21px
+      font-weight 600
+      line-height 27px
+      padding-bottom 25px
+      +to-width(1023px)
+        font-size 18px
+
+    ul
+      li
+        font-size 21px
+        font-weight 700
+        line-height 30px
+        padding-bottom 15px
+        padding-left 28px
+        position relative
+        +to-width(1023px)
+          font-size 18px
+          line-height 26px
+        &:after
+          content ''
+          position absolute
+          width 10px
+          height 10px
+          border-radius 50%
+          background-color #ffc62d
+          left 0
+          top 11px
+
+  &-item
+    padding 40px 0
+    +to-width(420px)
+      padding 25px 0
+    .wrap
+      display flex
+      +to-width(900px)
+        flex-direction column
+    &:nth-child(even)
+      .wrap
+        flex-direction row-reverse
+        +to-width(900px)
+          flex-direction column
+      .about-content
+        padding-left 30px
+        +to-width(900px)
+          padding-left 0
+    &:nth-child(3)
+      background-image linear-gradient(180deg, #fbfbfb 0%, #ededed 100%)
+
+    &__title
+      color #000000
+      font-size 50px
+      font-weight 900
+      padding-bottom 30px
+      +to-width(1023px)
+        font-size 38px
+        padding-bottom 24px
+      +to-width(520px)
+        font-size 32px
+        padding-bottom 20px
+
+    &__image
+      width 570px
+      min-width 570px
+      height 375px
+      background-position top center
+      background-size cover
+      +to-width(1200px)
+        min-width 480px
+      +to-width(900px)
+        margin-top 20px
+        min-width initial
+        max-width 570px
+        width 100%
+      +to-width(520px)
+        height 300px
+      +to-width(420px)
+        height 220px

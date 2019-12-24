@@ -1,0 +1,17 @@
+extends ../layouts/default
+
+block head
+
+block content
+	include ../blocks/header
+	include ../blocks/popups
+	main.main.general
+		include ../blocks/forehead
+		include ../blocks/breadcrumbs
+		include ../blocks/about
+		include ../blocks/join
+	include ../blocks/footer
+
+	+script('common.min')
+	+script('jquery-inputmask')
+	+script('main')

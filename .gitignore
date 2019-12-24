@@ -1,0 +1,10 @@
+/components
+/node_modules
+/public/storage
+/public/uploads
+/public/pdf
+/storage/*.key
+/vendor
+/makets
+.env
+.idea

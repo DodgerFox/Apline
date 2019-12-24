@@ -1,0 +1,57 @@
+{
+  "page": {
+	"lang": "en",
+	"title": "Wild Fox",
+	"description": ""
+  },
+
+  "main": {
+	"link": "src='../assets/images/svg/title_en.svg'",
+	"text": "Find a cool company for a ride",
+	"buttonJoin": "Become one of us",
+	"stuff": "Registered before the launch will receive useful pieces",
+  "menu": "Menu",
+  "lang": "class='lang lang__item_right'"
+  },
+
+  "form":{
+  	"registration": "Registration",
+  	"firstname": "placeholder='First Name'",
+  	"lastname": "placeholder='Last Name'",
+  	"email": "placeholder='E-mail'",
+  	"password": "placeholder='Password'",
+  	"repeat": "placeholder='Repeat'",
+  	"checkbox": "Inform about the launch community",
+    "button": "value='Registation'",
+  	"buttonSign": "value='Sign in'",
+  	"social": "Sign in with",
+    "signIn": "Sign in"
+
+
+  },
+  
+  "tags": {
+	"snowboard": "Snowboard",
+	"skate": "Skateboard",
+	"longboard": "Longboard",
+	"surf": "Surfing",
+	"bmx": "BMX",
+	"mtb": "MTB",
+	"kite": "Kitesurfing",
+	"ski": "SKI"
+  },
+
+  "about":{
+    "aboutlabel": "About project",
+    "inDesign": "In design",
+    "mainText": "Wild Fox - the modern format of online communication for people with an active lifestyle, where you can easily and with pleasure be able to get acquainted with people close to you in life style. We create for you an online platform with a steep design and a user-friendly interface for communication and joint skating",
+    "firstQuestion": "Do you want to go for a ride on the Longboard / Snowboard / BMX / Kitesurf ... but not with anyone?",
+    "firstAnswer": "- Create an invitation to WildFox and people will catch up!",
+    "firstAnswer2": "",
+    "secondQuestion": "Is there something that can be sold without equipment?",
+    "secondAnswer": "We sell in the category 'Flea market', someone might find it useful!"
+
+  }
+
+
+}

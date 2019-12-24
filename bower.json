@@ -1,0 +1,50 @@
+{
+  "name": "ach-template",
+  "version": "0.0.1",
+  "devDependencies": {
+    "jquery": "~2.1.3",
+    "svg4everybody": "~1.0.0",
+    "devicejs": "~0.2.7",
+    "jquery-cookie": "~1.4.1",
+    "jstimezonedetect": "~1.0.5",
+    "jquery.csssr.validation": "*",
+    "svgxuse": "^1.1.10",
+    "moment": "momentjs#^2.11.2"
+  },
+  "resolutions": {
+    "jquery": ">=2.1.3"
+  },
+  "dependencies": {
+    "anchor-js": "^4.0.0",
+    "Headhesive.js": "headhesive#^1.2.4",
+    "jquery-validation": "^1.17.0",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "MasonJS": "masonjs#*",
+    "parallax": "https://github.com/wagerfield/parallax.git#^2.1.3",
+    "swiper": "^4.0.2",
+    "wow": "wow-mit#^1.3.0"
+  },
+  "authors": [
+    "Alexey Chernov"
+  ],
+  "description": "Packages for frontend",
+  "main": "bower",
+  "keywords": [
+    "project",
+    "template",
+    "frontend",
+    "gulp",
+    "pug",
+    "stylus"
+  ],
+  "license": "MIT",
+  "homepage": "alexey-chernov.ru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ]
+}

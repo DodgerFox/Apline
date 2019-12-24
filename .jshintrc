@@ -1,0 +1,27 @@
+{
+  "browser": true,    // we have global browser objects like document, navigator
+  "esnext": false,    // code contains new es constructions
+  "bitwise": true,    // forbid binary operations | &
+  "curly": true,      // all cycles and if statements must have body
+  "eqeqeq": false,    // use !== instead !=
+  "forin": true,      // require hasOwnProperty in for..in loops
+  "latedef": true,    // use variables only after defenition
+  "noarg": true,      // forbid arguments.callee and arguments.caller
+  "undef": true,      // prohibits the use of explicitly undeclared variables
+  "unused": true,     // warns about unused variables
+  "strict": true,     // always use strict mode
+  "trailing": true,   // error if after string exist any spaces
+  "smarttabs": true, // hide errors about using tabs with spaces
+  "multistr": false,  // hide errors about multi string text
+  "devel": true,      // can use console and alert
+  "indent":4, "white":false,
+  "globals": {        // hide errors about not defined variables
+	"$": false,
+	"angular": false,
+	"app": false,
+	"identifyBrowser": false,
+	"memoize2": false,
+	"hs": false,
+	"dataLayer": false
+  }
+}

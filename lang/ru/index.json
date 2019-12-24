@@ -1,0 +1,43 @@
+{
+  "page": {
+	"lang": "ru",
+	"title": "Wild Fox",
+	"description": ""
+  },
+
+  "main": {
+	"link": "src='../assets/images/svg/title.svg'",
+	"text": "Найди себе компанию для катки",
+	"buttonJoin": " Стать одним из нас",
+	"stuff": "Зарегистрированным до запуска - полезные ништяки",
+	"menu": "Меню",
+	"lang": "class='lang lang__item_left'"
+  },
+
+  "form":{
+  	"registration": "Регистрация",
+  	"firstname": "placeholder='Имя'",
+  	"lastname": "placeholder='Фамилия'",
+  	"email": "placeholder='E-mail'",
+  	"password": "placeholder='Пароль'",
+  	"repeat": "placeholder='Повтори'",
+  	"checkbox": "информировать о запуске письмом на почту",
+  	"button": "value='Зарегистрироваться'",
+  	"buttonSign": "value='Войти'",
+  	"social": "Войти через",
+  	"signIn": "Войти"
+  },
+  
+  "tags": {
+	"snowboard": "Сноуборд",
+	"skate": "Скейтборд",
+	"longboard": "Лонгборд",
+	"surf": "Сёрфинг",
+	"bmx": "BMX",
+	"mtb": "MTB",
+	"kite": "Кайт",
+	"ski": "Лыжи"
+  }
+
+
+}

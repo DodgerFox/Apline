@@ -1,0 +1,39 @@
+.forehead
+  height 270px
+  width 100%
+  background-position center
+  background-size cover
+  position relative
+  padding 0
+  +to-width(640px)
+    height 200px
+  &:after
+    content ''
+    background-color #13112c
+    opacity 0.7
+    position absolute
+    left 0
+    top 0
+    right 0
+    bottom 0
+
+  .wrap
+    height 100%
+    display flex
+    align-items center
+
+  &-title
+    margin auto 0
+    display block
+    position relative
+    z-index 2
+    color #ffffff
+    font-size 56px
+    font-weight 900
+    line-height 50px
+    text-transform uppercase
+    +to-width(900px)
+      font-size 42px
+    +to-width(520px)
+      font-size 32px
+      line-height 40px

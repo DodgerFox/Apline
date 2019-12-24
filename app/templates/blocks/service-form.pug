@@ -1,0 +1,18 @@
+section.features.service-feed
+  .wrap
+    .features-body
+      .features-container
+        h2.section-title Потому что мы не только <span>делаем свою работу в срок с соблюдением всех правил безопасности,</span> а еще и помогаем вам:
+        p.service-feed__text Укажите номер телефона для связи
+        form.service-form
+          .service-wrap
+            input(type="text" data-inputmask="'mask': '+7 (999) 999-99-99'" placeholder="+7 (___) ___-__-__").input-phone
+            input(type="submit" value="submit")
+            .simple-button
+              p Обсудить обьект
+              .simple-button__arrow
+                img(src="assets/images/icon_arrow.svg")
+          
+          .checkbox
+            input(type="checkbox" id="service-checkbox")
+            label(for="service-checkbox") Нажимая на нкнопку Отправить заявку, я даю согласие на обработку персоальных данных

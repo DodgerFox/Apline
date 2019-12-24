@@ -1,0 +1,27 @@
+section.popups
+  .wrap
+    form.popups-form.popups-form_phone
+      p.popups-form__title Мы уважаем ваш выбор!
+      p.popups-form__text Укажите номер телефона, на который вам перезвонить и обсудить детали работы
+      .vacancy-form__input
+        label Номер телефона
+        input(type="text" id="vacancy-input-phone" data-inputmask="'mask': '+7 (999) 999-99-99'" placeholder="+7 (___) ___-__-__").input-phone
+      .checkbox
+        input(type="checkbox" id="service-checkbox")
+        label(for="service-checkbox") Нажимая на нкнопку Отправить заявку, я даю согласие на обработку персоальных данных
+      input(type="submit" value="submit")
+      .simple-button
+        p Обсудить детали
+        .simple-button__arrow
+          img(src="assets/images/icon_arrow.svg")
+      .popups-close
+        img(src="assets/images/popup-close.svg")
+    
+    .popups-form.popups-form_thanks
+      p.popups-form__title Мы уважаем ваш выбор!
+      p.popups-form__text Мы получили вашу заявку. <br>Наш менеджер по заботе о клиентах свяжется с вами в ближайшее время
+      .popups-logo
+        img(src="assets/images/logo.svg")
+      .popups-close
+        img(src="assets/images/popup-close.svg")
+  

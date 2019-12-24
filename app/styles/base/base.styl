@@ -1,0 +1,536 @@
+body
+	position relative
+	min-width 320px
+	width 100%
+	color #141414
+	font-weight 400
+
+	&.fixed
+		overflow hidden
+
+
+html
+	font-family Akrobat, Arial, sans-serif
+	font-size 62.5%
+	line-height 1.4
+	letter-spacing 0
+	min-width 320px
+	margin-left auto
+	margin-right auto
+
+
+section
+	padding-top 70px
+	padding-bottom 80px
+	+to-width(420px)
+		padding-top 40px
+		padding-bottom 40px
+
+.section
+
+	&-header
+		display flex
+		align-items center
+		justify-content space-between
+		+to-width(640px)
+			flex-direction column
+			align-items flex-start
+
+	&-title
+		color #000000
+		font-size 50px
+		font-weight 900
+		text-transform uppercase
+		padding-bottom 10px
+		span
+			color #eeb621
+		+to-width(750px)
+			font-size 42px
+			line-height 48px
+		+to-width(560px)
+			font-size 32px
+			line-height 40px
+		+to-width(420px)
+			font-size 28px
+			line-height 34px
+
+	&-text
+		color #000000
+		font-size 17px
+		font-weight 600
+		text-transform uppercase
+		+to-width(520px)
+			font-size 14px
+			line-height 16px
+
+.wrap
+	position relative
+	padding 0 30px
+	width 100%
+	margin-left auto
+	margin-right auto
+	max-width 1230px
+	+to-width(767px)
+		padding 0 15px
+
+.main
+	display flex
+	flex-direction column
+	min-height 100vh
+	position relative
+	z-index 2
+	padding-top 124px
+	&.general
+		background-image url('../images/works-bg.png')
+	  background-position center
+	+to-width(1100px)
+		padding-top 55px
+
+.onthemap
+	position relative
+	p
+		font-size 18px
+		font-weight 600
+		padding-bottom 4px
+		width fit-content
+		border-bottom 1px solid #979797
+		cursor pointer
+		transition .3s all
+		&:hover
+			color #eeb621
+			border-color #eeb621
+
+.map
+	position absolute
+	z-index 10
+	left 0
+	bottom 45px
+	width 743px
+	height 423px
+	background-color #333
+	pointer-events none
+	opacity 0
+	transition .3s all
+	&.open
+		opacity 1
+		pointer-events all
+	+to-width(800px)
+		width 480px
+		height 380px
+	+to-width(520px)
+		width 290px
+		height 380px
+
+.simple-button
+	height 69px
+	background-color #eeb621
+	position relative
+	overflow hidden
+	display flex
+	align-items center
+	justify-content space-between
+	padding-left 35px
+	padding-right 30px
+	color #000000
+	font-size 18px
+	line-height 20px
+	font-weight 900
+	letter-spacing 1px
+	text-transform uppercase
+	transition 0.7s all
+	width fit-content
+	padding-right 110px
+	margin 0 auto
+	cursor pointer
+	&:after
+		content ''
+		position absolute
+		right -50px
+		top -100px
+		bottom -100px
+		right -100px
+		width 180px
+		background-color black
+		transform rotate(15deg)
+		transition 0.7s all
+	p
+		position relative
+		z-index 2
+
+	&__arrow
+		position absolute
+		right 0
+		top 0
+		bottom 0
+		width 80px
+		z-index 2
+		display flex
+		align-items center
+		justify-content center
+
+	&:hover
+		color #eeb621
+		&:after
+			width 140%
+
+.slider
+	display flex
+	margin-top 30px
+	margin-left -15px
+	padding-bottom 35px
+	+to-width(900px)
+		margin-left -4px
+	.slick-list
+		overflow visible
+
+	&-custom
+		display flex
+
+	&-counter
+		display flex
+		align-items center
+		margin-right 25px
+		&__change
+			font-size 23px
+			font-weight 700
+
+		&__all
+			margin-left 5px
+			font-size 13px
+			&:before
+				content 'из '
+
+
+	&-arrows
+		display flex
+		&__item
+			width 48px
+			height 48px
+			background-color black
+			display flex
+			align-items center
+			justify-content center
+			cursor pointer
+			transition 0.3s all
+			&:first-child
+				margin-right 2px
+				transform rotate(180deg)
+
+			&.disabled
+				background-color #efefef
+				svg
+					use
+						fill #cfcfcf
+
+	&-item
+		height initial!important
+		padding 15px
+		+to-width(900px)
+			padding 4px
+		&__container
+			width 470px
+			height 360px
+			background-color #333
+			background-size cover
+			background-position top center
+			position relative
+			overflow hidden
+			padding 25px 30px
+			display flex
+			flex-direction column
+			justify-content flex-end
+			transition 0.3s all
+			+to-width(1200px)
+				width 380px
+				height 330px
+				padding 5px
+			+to-width(900px)
+				width 300px
+				height 260px
+			+to-width(520px)
+				width 280px
+			&:after
+				content ''
+				position absolute
+				left 0
+				top 0
+				right 0
+				bottom 0
+				background-color rgba(0, 0, 0, 0)
+				transition 0.3s all
+			&:hover
+				.slider-title
+					background-color transparent
+				.slider-content
+					transform translateY(0)
+				&:after
+					background-color rgba(0, 0, 0, 0.8)
+
+	&-content
+		transform translateY(73px)
+		position relative
+		z-index 2
+		transition 0.3s all
+		+to-width(1200px)
+			transform translateY(54px)
+
+	&-title
+		color #ffffff
+		font-size 27px
+		font-weight 700
+		letter-spacing 0.8px
+		max-width 280px
+		background-color black
+		padding 5px
+		transition 0.3s all
+		margin-left -5px
+
+	&-info
+		width 100%
+		margin-top 14px
+		display flex
+		justify-content space-between
+
+		&__wrap
+			p
+				font-size 18px
+				font-weight 400
+				line-height 22px
+				color #ffffff
+
+	&-next
+		width 48px
+		height 48px
+		background-color #eeb621
+		display flex
+		align-items center
+		justify-content center
+
+.button-more
+	margin 0 auto
+	margin-top 45px
+	border 1px solid #eeb621
+	padding 16px 20px
+	display flex
+	align-items center
+	justify-content center
+	width fit-content
+	color #000000
+	font-size 13px
+	font-weight 700
+	text-transform uppercase
+	cursor pointer
+	transition .3s all
+	img
+		margin-left 10px
+	&:hover
+		background-color #eeb621
+
+.pagination
+	display flex
+	justify-content center
+	margin-top 60px
+	padding-bottom 80px
+	+to-width(640px)
+		padding-bottom 20px
+		margin-top 30px
+
+	&-items
+		display flex
+		align-items center
+		padding 0 30px
+		a
+			margin 0 13px
+			color #000000
+			width 20px
+			text-align center
+			font-size 23px
+			font-weight 900
+			padding-bottom 3px
+			transition .3s all
+			&:hover
+				color #eeb621
+			&.active
+				border-bottom 3px solid #eeb621
+
+	&__arrow
+		width 48px
+		height 48px
+		display flex
+		align-items center
+		justify-content center
+		background-color black
+		transition .3s all
+		&:first-child
+			transform rotate(180deg)
+		&.disabled
+			background-color #efefef
+			cursor default
+			pointer-events none
+			svg
+				use
+					transition .3s all
+					fill #cfcfcf
+
+.article__button
+	cursor pointer
+	display flex
+	align-items center
+	margin-top 15px
+	p
+		font-size 18px
+		font-weight 900
+		transition .3s all
+		margin-right 10px
+
+	img
+		max-width 11px
+		t()
+
+	&.closed
+		img
+			transform rotate(180deg)
+	&:hover
+		p
+			color #eeb621
+
+.checkbox
+	margin-top 20px
+
+	input[type="checkbox"]
+		position absolute
+		opacity 0
+
+		& + label
+			position relative
+			cursor pointer
+			padding 0
+			font-size 14px
+			line-height 18px
+			font-weight 600
+
+
+		& + label:before
+			content: ''
+			margin-right: 10px
+			display: inline-block
+			vertical-align: text-top
+			width 20px
+			height 20px
+			background-color #eeb621
+
+		& + label:after
+			content: ''
+			position absolute
+			margin-right: 10px
+			width 8px
+			height 8px
+			background-color black
+			left: 6px
+			top: 6px
+			opacity 0
+			t()
+
+		&:hover + label:after
+			opacity 0.5
+
+
+		&:checked + label:after
+			opacity 1
+
+		&:disabled + label
+			color: #b8b8b8
+			cursor: auto
+
+		&:disabled + label:before
+			box-shadow: none
+			background: #ddd
+
+.socials
+	position absolute
+	top 0
+	left 0
+	overflow hidden
+	&.open
+		.socials-share
+			transform translateY(0)
+			transform translateX(0%)
+	+to-width(1200px)
+		position relative
+		display flex
+		height 58px
+
+	&-button
+		width 58px
+		height 58px
+		background-color #ffc62d
+		display flex
+		align-items center
+		justify-content center
+		cursor pointer
+		position relative
+		z-index 2
+
+	&-share
+		display flex
+		flex-direction column
+		align-items center
+		width 58px
+		padding 10px 0
+		margin-top 20px
+		background-color #f1f1f1
+		position relative
+		transform translateY(-120%)
+		transition 0.6s all
+		+to-width(1200px)
+			flex-direction row
+			transform translateY(0)
+			transform translateX(0%)
+			width initial
+			height 58px
+			margin-top 0
+			margin-left 20px
+			padding 0 10px
+		a
+			margin-bottom 10px
+			transition .3s all
+			&:hover
+				opacity 0.7
+			+to-width(1200px)
+				margin-bottom 0
+				margin-right 10px
+				&:last-child
+					margin-right 0
+
+		&:after
+			content ''
+			position absolute
+			top -14px
+			width 1px
+			height 7px
+			border-bottom solid 7px #f1f1f1
+			border-left solid 7px transparent
+			border-right solid 7px transparent
+			+to-width(1200px)
+				border-right solid 7px #f1f1f1
+				border-bottom solid 7px transparent
+				border-top solid 7px transparent
+				width 7px
+				height 1px
+				left -21px
+				top 22px
+
+form
+	input[type="submit"]
+		opacity 0
+		pointer-events none
+		position absolute
+		z-index -1
+
+.subtrigger
+	cursor pointer
+	&:hover
+		background-color #eeb621
+		transition .3s all
+	a
+		pointer-events none!important

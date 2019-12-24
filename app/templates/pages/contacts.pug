@@ -1,0 +1,20 @@
+extends ../layouts/default
+
+block head
+
+block content
+	include ../blocks/header
+	include ../blocks/search
+	include ../blocks/submenu
+	include ../blocks/popups
+	main.main.general
+		include ../blocks/forehead
+		include ../blocks/breadcrumbs
+		include ../blocks/contacts
+	include ../blocks/footer
+
+	+script('common.min')
+	+script('jquery-inputmask')
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNIxXO_SrSX_b5mDkAa-nep-O7AuFn1WQ&amp;callback=initMap")
+	+script('map')
+	+script('main')

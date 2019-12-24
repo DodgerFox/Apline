@@ -1,0 +1,56 @@
+.features
+  padding-top 80px
+  padding-bottom 40px
+  +to-width(420px)
+    padding 20px 0
+
+  .simple-button
+    margin 0
+
+  &-body
+    background-image url('../images/features.jpg')
+    background-size cover
+    padding 30px
+    +to-width(640px)
+      margin-left -15px
+      margin-right -15px
+    +to-width(420px)
+      padding 20px
+    +to-width(360px)
+      padding 10px
+
+  &-container
+    background-color white
+    padding 60px
+    +to-width(750px)
+      padding 35px
+    +to-width(360px)
+      padding 30px
+
+  &-options
+    display flex
+    flex-wrap wrap
+    padding-bottom 50px
+
+    &__item
+      width 50%
+      display flex
+      padding-right 50px
+      margin-top 35px
+      +to-width(750px)
+        padding-right 20px
+      +to-width(560px)
+        width 100%
+        padding-right 0
+      img
+        height fit-content
+      p
+        margin-left 20px
+        color #000000
+        font-size 19px
+        font-weight 700
+        letter-spacing -0.2px
+        line-height 24px
+        +to-width(750px)
+          font-size 16px
+          margin-top -4px

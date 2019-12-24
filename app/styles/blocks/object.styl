@@ -1,0 +1,169 @@
+.object
+  padding-top 35px
+  +to-width(640px)
+    padding-bottom 40px
+  .section-title
+    padding-bottom 30px
+    text-transform none
+
+  &-body
+    padding-left 100px
+    position relative
+    +to-width(1200px)
+      padding-left 0
+
+  &-item
+    padding-bottom 30px
+    h2
+      font-size 32px
+      font-weight 900
+      padding-bottom 8px
+      +to-width(560px)
+        font-size 24px
+
+    p, ul
+      font-size 21px
+      font-weight 400
+      line-height 28px
+      +to-width(640px)
+        font-size 18px
+        line-height 26px
+      li
+        position relative
+        padding-left 20px
+        padding-bottom 10px
+        &:after
+          content ''
+          position absolute
+          left 0
+          top 10px
+          background-image url('../images/object/list-item.svg')
+          width 10px
+          height 10px
+
+    &__wrap
+      display flex
+      +to-width(420px)
+        flex-direction column
+
+      ul,p
+        +to-width(420px)
+          padding-left 0!important
+          padding-right 0!important
+        &:first-child
+          padding-right 25px
+          +to-width(640px)
+            padding-right 10px
+        &:last-child
+          padding-left 25px
+          +to-width(640px)
+            padding-left 10px
+
+  &-wrap
+    display flex
+    +to-width(640px)
+      flex-direction column
+    .object-item
+      max-width 50%
+      +to-width(640px)
+        max-width 100%
+      &:nth-child(even)
+        padding-left 110px
+        +to-width(640px)
+          padding-left 0
+
+  &-photo
+    margin-top 20px
+    width 100%
+    img
+      max-width 100%
+      width 100%
+
+  &-gallery
+    margin-left -15px
+    margin-right -15px
+    display flex
+    flex-wrap wrap
+    +to-width(900px)
+      margin-left -4px
+      margin-right -4px
+      margin-top 15px
+
+    &__item
+      padding 15px
+      width 45%
+      +to-width(900px)
+        padding 4px
+      &:nth-child(1)
+        width 55%
+      &:nth-child(4)
+        width 55%
+      &:nth-child(5)
+        width 55%
+      &:nth-child(8)
+        width 55%
+      &:nth-child(9)
+        width 55%
+      &:nth-child(12)
+        width 55%
+      &:nth-child(13)
+        width 55%
+      &:nth-child(16)
+        width 55%
+      &:nth-child(17)
+        width 55%
+      &:nth-child(20)
+        width 55%
+
+    &__image
+      height 304px
+      background-size cover
+      background-position top center
+      +to-width(900px)
+        height 235px
+      +to-width(520px)
+        height 160px
+
+  &-feedback
+    margin-top 20px
+    height 400px
+    background-size cover
+    background-position top center
+    padding 0
+    +to-width(900px)
+      padding 40px 0
+      height initial
+    .wrap
+      display flex
+      justify-content space-between
+      align-items center
+      height 100%
+      +to-width(900px)
+        flex-direction column
+
+    &__title
+      font-size 50px
+      font-weight 900
+      text-transform uppercase
+      +to-width(900px)
+        text-align center
+      +to-width(640px)
+        font-size 32px
+      +to-width(420px)
+        font-size 26px
+
+    &__image
+      margin-top -20px
+      margin-left 20px
+      min-width 355px
+      box-shadow 0 14px 20px rgba(0, 0, 0, 0.1)
+      img
+        max-width 100%
+      +to-width(900px)
+        margin-top 20px
+        min-width initial
+
+  &-slider
+    padding-bottom 110px
+    +to-width(640px)
+      padding-bottom 40px

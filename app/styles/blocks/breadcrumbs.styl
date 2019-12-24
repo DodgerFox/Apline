@@ -1,0 +1,30 @@
+.breadcrumbs
+  padding 25px 0
+
+  &-links
+    display flex
+
+    a
+      font-size 14px
+      color #000000
+      font-weight 400
+      margin-right 40px
+      position relative
+      t()
+      &:after
+        content ''
+        position absolute
+        background-image url('../images/icon_breadcrumbs.svg')
+        right -25px
+        width 10px
+        height 7px
+        bottom 2px
+        pointer-events none
+
+      &:last-child
+        pointer-events none
+        &:after
+          display none
+
+      &:hover
+        color #eeb621

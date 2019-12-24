@@ -1,0 +1,12 @@
+include mixins/scripts
+include mixins/tree
+include mixins/icon
+
+include ../../../../vendor/mixins/common
+
+mixin img(class, width, height, title)
+    img(src='../assets/images/#{class}?' + timestamp width='#{width}' height='#{height}' title='#{title}' alt='#{title}')
+
+mixin section(class)
+    section(class='section #{class}' id='#{class}')
+        block

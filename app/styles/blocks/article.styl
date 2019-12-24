@@ -1,0 +1,185 @@
+.article
+  padding-top 35px
+  padding-bottom 0
+  .section-title
+    padding-bottom 20px
+
+  &-date
+    font-size 12px!important
+    font-weight 700!important
+    padding 10px 4px!important
+    line-height 12px!important
+    background-color #e4e4e4
+    text-transform uppercase
+    margin-bottom 30px
+    width fit-content
+
+  .contacts-share
+    margin-top 0
+    img
+      margin 0
+
+  .simple-button
+    cursor pointer
+    margin 0
+    margin-top 10px
+    +to-width(420px)
+      padding-right 40px
+    p
+      padding-bottom 0
+      font-weight 900
+      font-size 16px
+      line-height 18px
+      +to-width(420px)
+        font-size 14px
+    img
+      margin 0
+
+  &-notif
+    position absolute
+    right 0
+    top 0
+    width 370px
+    padding 25px 30px
+    background-color #f1f1f1
+    +to-width(1200px)
+      position relative
+      margin-top 20px
+      width 100%
+
+    &__title
+      font-size 22px!important
+      font-weight 900!important
+      padding-bottom 40px!important
+
+    input
+      background-color #ffffff
+      height 70px
+      width 100%
+      padding 0 30px
+      font-size 17px
+      font-weight 400
+      +placeholder()
+        color black
+
+  &-content
+    padding-right 400px
+    position relative
+    +to-width(1200px)
+      padding-right 0
+
+    h2
+      font-size 42px
+      font-weight 900
+      padding-bottom 17px
+      +to-width(640px)
+        font-size 36px
+      +to-width(420px)
+        font-size 30px
+
+    h3
+      font-size 32px
+      font-weight 900
+      padding-bottom 12px
+      +to-width(420px)
+        font-size 28px
+
+    h4
+      font-size 28px
+      font-weight 900
+      padding-bottom 12px
+      +to-width(420px)
+        font-size 26px
+
+    h4
+      font-size 24px
+      font-weight 900
+      padding-bottom 12px
+
+    h5
+      font-size 22px
+      font-weight 900
+      padding-bottom 12px
+
+    h5
+      font-size 20px
+      font-weight 900
+      padding-bottom 12px
+
+    p
+      font-size 21px
+      font-weight 400
+      line-height 30px
+      padding-bottom 30px
+      +to-width(640px)
+        font-size 18px
+      +to-width(420px)
+        font-size 16px
+        line-height 26px
+
+
+    ul, ol
+      padding-left 40px
+      +to-width(420px)
+        padding-left 20px
+      li
+        padding-left 20px
+        position relative
+        font-size 21px
+        font-weight 400
+        line-height 24px
+        padding-bottom 11px
+        &:after
+          content ''
+          position absolute
+          left 0
+          top 8px
+          background-image url('../images/object/list-item.svg')
+          width 10px
+          height 10px
+        +to-width(640px)
+          font-size 18px
+        +to-width(420px)
+          font-size 16px
+          padding-bottom 5px
+
+    blockquote
+      width 100%
+      background-color #f1f1f1
+      padding 45px 40px
+      font-size 21px
+      font-weight 400
+      line-height 30px
+      margin-bottom 35px
+      margin-top 35px
+      position relative
+      +to-width(420px)
+        padding 35px 20px
+      &:after
+        content '“'
+        position absolute
+        color #ffc62d
+        top 15px
+        left 18px
+        font-size 130px
+      &:before
+        content '”'
+        position absolute
+        color #ffc62d
+        bottom -40px
+        right 18px
+        font-size 130px
+
+      cite
+        display block
+        text-align right
+        margin-top 30px
+        font-size 22px
+        font-weight 900
+        +to-width(640px)
+          margin-top 0px
+          font-size 20px
+
+    img
+      margin-bottom 25px
+      max-width 100%

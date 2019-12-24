@@ -1,0 +1,56 @@
+.clients
+  padding-top 40px
+  padding-bottom 40px
+  &-body
+    box-shadow 0 17px 60px rgba(112, 112, 112, 0.16)
+    background-color white
+    padding 50px
+    padding-top 45px
+    +to-width(640px)
+      padding 40px 25px
+
+  &-list
+    display flex
+    flex-wrap wrap
+    margin-top 20px
+    border-top 1px solid #e3e3e3
+
+    &__item
+      width 16.66666%
+      height 180px
+      position relative
+      display flex
+      align-items center
+      justify-content center
+      padding 0 10px
+      +to-width(1100px)
+        width 33.333%
+      +to-width(500px)
+        height 130px
+
+      img
+        max-width 100%
+
+      &:after
+        content ''
+        left 0
+        right 0
+        bottom 0
+        top 0
+        border 1px solid #e3e3e3
+        border-right none
+        border-top none
+        position absolute
+
+      &:nth-child(6)
+        border-right 1px solid #e3e3e3
+      &:nth-child(3)
+        +to-width(1100px)
+          border-right 1px solid #e3e3e3
+      &:nth-child(9)
+        +to-width(1100px)
+          border-right 1px solid #e3e3e3
+      &:nth-child(12)
+        border-right 1px solid #e3e3e3
+      &:last-child
+        border-right 1px solid #e3e3e3
